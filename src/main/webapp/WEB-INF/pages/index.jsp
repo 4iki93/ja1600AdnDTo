@@ -8,7 +8,7 @@
  index page
 <br>
 <sf:form action="/save" method="post" modelAttribute="user">
-    <sf input path="name"></sf>
+    <sf:input path="name"/>
     <sf:input path="product"></sf:input>
     <sf:input path="surname"></sf:input>
     <input type="submit" value="save" >
