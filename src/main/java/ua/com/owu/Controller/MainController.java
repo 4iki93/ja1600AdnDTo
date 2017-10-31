@@ -35,9 +35,18 @@ private ProductEditor productEditor;
     userService.save(user);
     return "index";
     }
+
     @InitBinder
     public void biner(WebDataBinder binder){
         binder.registerCustomEditor(Product.class,productEditor);
     }
+
+
+    @GetMapping("/users")
+    public String users (Model model){
+        model.addAttribute("users",userService.findAllWithProducts());
+        return "users";
+    }
+
 
 }

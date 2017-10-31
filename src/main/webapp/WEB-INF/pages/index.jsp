@@ -13,5 +13,6 @@
     <sf:input path="surname"></sf:input>
     <input type="submit" value="save" >
 </sf:form>
+<a href="/users">go to users page</a>
 </body>
 </html>

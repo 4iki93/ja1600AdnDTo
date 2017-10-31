@@ -8,4 +8,8 @@ public interface UserService {
     void save (User user);
     List <User> findAll();
     User findOne(int id);
+
+    List<User> findAllWithProducts();
+
+
 }

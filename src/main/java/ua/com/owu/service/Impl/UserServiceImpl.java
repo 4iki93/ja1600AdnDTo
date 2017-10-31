@@ -31,4 +31,11 @@ private UserDAO dao;
     public User findOne(int id) {
         return dao.findOne(id);
     }
+
+    @Override
+    public List<User> findAllWithProducts() {
+        return dao.findAllWithProducts();
+    }
+
+
 }
